@@ -10,7 +10,9 @@ export default {
     }
   },
   env: {
-    storeUrl: process.env.STORE_URL || "http://localhost:1337"
+    strapiUrl: process.env.STRAPI_URL || "http://localhost:1337",
+    storeUrl: process.env.STORE_URL || "http://localhost:1337",
+  
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

@@ -5,7 +5,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.MY_HEROKU_GRAPHQL_URL || "http://localhost:1337/graphql"
+        httpEndpoint: process.env.MY_HEROKU_GRAPHQL_URL
       }
     }
   },

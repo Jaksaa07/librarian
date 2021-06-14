@@ -17,7 +17,7 @@ export default {
     }
   },
   async fetch() {
-    this.books = await fetch('http://localhost:1337/books').then(res =>
+    this.books = await fetch(`${process.env.MY_HEROKU_URL || "http://localhost:1337"}/books`).then(res =>
       res.json()
     )
   },

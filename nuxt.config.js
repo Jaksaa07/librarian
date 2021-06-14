@@ -10,8 +10,8 @@ export default {
     }
   },
   env: {
-    strapiUrl: process.env.STRAPI_URL || "http://localhost:1337",
-    storeUrl: process.env.STORE_URL || "http://localhost:1337",
+    strapiUrl: process.env.MY_HEROKU_URL || "http://localhost:1337",
+    storeUrl: process.env.MY_HEROKU_URL || "http://localhost:1337",
   
   },
 

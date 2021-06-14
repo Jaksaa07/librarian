@@ -1,0 +1,17 @@
+query Books {
+  books {
+    id
+    title
+    authors {
+      id
+      name
+    }
+    categories {
+      id
+      name
+    }
+    picture {
+      url
+    }
+  }
+}

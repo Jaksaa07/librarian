@@ -10,19 +10,17 @@
 </template>
 
 <script>
-import booksQuery from '../apollo/queries/books'
 export default {
   data() {
     return {
       books: []
     }
   },
-  apollo: {
-    books: {
-      prefetch: true,
-      query: booksQuery
-    }
-  }
+  async fetch() {
+    this.books = await fetch('http://localhost:1337/books').then(res =>
+      res.json()
+    )
+  },
 };
 </script>
 

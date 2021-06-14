@@ -1,20 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.MY_HEROKU_GRAPHQL_URL
-      }
-    }
-  },
-  env: {
-    strapiUrl: process.env.MY_HEROKU_URL || "http://localhost:1337",
-    storeUrl: process.env.MY_HEROKU_URL || "http://localhost:1337",
-  
-  },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'librarian-front',
@@ -52,8 +38,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    '@nuxtjs/apollo'
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
